@@ -34,6 +34,8 @@ h1, h2, h3, h4, h5, h6 {
 #header img {
   -webkit-transform: scale(0.5);
           transform: scale(0.5);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #location {
@@ -89,14 +91,13 @@ h1, h2, h3, h4, h5, h6 {
 
 #explore h3 {
   color: #6d6c6c;
-  width: 400px;
+  width: auto;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: 400;
   line-height: 110%;
   padding-top: 20px;
-  margin-left: -10px;
 }
 
 #explore h4 {
@@ -179,5 +180,97 @@ h1, h2, h3, h4, h5, h6 {
 
 .step h3 {
   padding-left: 15px;
+}
+
+#restaurants {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#restaurants h2 {
+  position: relative;
+  left: -85px;
+  padding-bottom: 30px;
+  color: black;
+}
+
+.restaurantcard {
+  width: 340px;
+  height: 260px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border: solid 5px white;
+  border-radius: 15px;
+  -webkit-box-shadow: 3px 3px 10px rgba(68, 68, 68, 0.2);
+          box-shadow: 3px 3px 10px rgba(68, 68, 68, 0.2);
+  margin-bottom: 30px;
+}
+
+.restaurantcard img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  height: 180px;
+  width: 340px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: -5px;
+  margin-top: -5px;
+}
+
+.restaurantcard h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  padding-top: 15px;
+  padding-left: 10px;
+}
+
+.restaurantcard h4 {
+  font-size: 1.2em;
+  font-weight: 300;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.fa-heart {
+  color: black;
+  position: relative;
+  font-size: 1.8em;
+  top: -40px;
+  left: 270px;
+}
+
+footer {
+  background-color: #403f3f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer h2 {
+  font-family: 'Shrikhand', 'Times New Roman', Times, serif;
+  color: white;
+  font-size: 1.1em;
+  padding-left: 25px;
+  font-weight: 100;
+  padding-top: 35px;
 }
 /*# sourceMappingURL=style.css.map */
