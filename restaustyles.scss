@@ -4,7 +4,6 @@
     left: 30px;
     font-size: 1.4em;
     color: black;
-    z-index: 10;
     height: 50px;
     width: 50px;
 }
@@ -12,18 +11,109 @@
 .mainimage img {
     max-width: 100%;
     height: auto;
-    z-index: 5;
     position: relative;
 }
 
-.menu {
+.menutitle {
     width: auto;
+    height: 80px;
     border-top-left-radius: 35px;
     border-top-right-radius: 35px;
-    padding-bottom: 100px;
     padding-top: 100px;
     margin-top: -45px;
-    z-index: 1000;
     position: relative;
     background-color: #ebebeb;
+    justify-content: center;
 }
+
+.menutitle h2 {
+    font-family: 'Shrikhand', 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 1.7em;
+    font-weight: 300;
+    position: relative;
+    top: -70px;
+    left: 7%;
+}
+
+.form input[type="checkbox"]{
+    display:none;  
+  }
+  .form input[type="checkbox"] + label.fa {
+      color: #88E2E2;
+      font-size: 25px;
+      width: 25px;
+      height: 25px;
+      cursor: pointer;
+  }
+  .form input[type="checkbox"]:checked +label.fa{
+      background: #fff;
+  }
+  .form input[type="checkbox"] + label.fa:before {
+       display:inline-block;
+       content: "\f004";
+       font-weight: 400;
+       color: #6d6c6c;
+       cursor:pointer;
+  }
+  
+  .form input[type="checkbox"]:checked +label.fa:before{
+      content:"\f004";
+      font-weight: 900;
+      color: #9356DC;
+      position: relative;
+      background: #ebebeb;
+  }
+
+  .form {
+    position: relative;
+    left: 50px;
+    top: -65px;
+  }
+
+  .menuheader {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 80px;
+  }
+
+  .menumain {
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    display: flex !important;
+  }
+
+  .menuitem, .entree, .plats, .desserts {
+    flex-direction: column;
+  }
+
+  .menumain h3 {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+  }
+
+  .menumain h4, h5 {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .plats h3, .desserts h3 {
+    margin-top: 30px;
+  }
+
+  .menuitem {
+    width: 350px;
+    height: 65px;
+    border-radius: 15px;
+    background-color: white;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 10px rgba(68, 68, 68, 0.2);
+    padding-left: 15px;
+  }
