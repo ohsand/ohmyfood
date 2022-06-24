@@ -137,5 +137,75 @@
   -webkit-box-shadow: 3px 3px 10px rgba(68, 68, 68, 0.2);
           box-shadow: 3px 3px 10px rgba(68, 68, 68, 0.2);
   padding-left: 15px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  overflow: hidden;
+  position: relative;
+}
+
+.menuitemleft {
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menuitemright {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 100%;
+  float: inline-end;
+  float: right;
+  position: absolute;
+  right: 0;
+}
+
+.menuitemright h4 {
+  width: 50px;
+  text-align: center;
+  padding-top: 35px;
+  padding-bottom: 0px;
+}
+
+.menuitemleft h4 {
+  font-size: 1.1em;
+  font-weight: 500;
+  padding-top: 10px;
+}
+
+.menuitemleft h5 {
+  font-size: 1em;
+  font-weight: 400;
+  padding-top: 5px;
+}
+
+.tick {
+  width: 70px;
+  background-color: #90dec9;
+  height: 65px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  right: 0px;
+}
+
+.fa-circle-check {
+  color: white;
+  font-size: 1.8em;
+  font-weight: 400;
+  font-family: FontAwesome;
 }
 /*# sourceMappingURL=restaustyles.css.map */

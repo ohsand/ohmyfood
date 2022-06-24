@@ -116,4 +116,63 @@
     margin-bottom: 15px;
     box-shadow: 3px 3px 10px rgba(68, 68, 68, 0.2);
     padding-left: 15px;
+    flex-direction: row;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .menuitemleft {
+    flex-direction: column !important;
+    display: flex;
+  }
+
+  .menuitemright {
+    flex-direction: row;
+    height: 100%;
+    float: inline-end;
+    float: right;
+    position: absolute;
+    right: 0;
+  }
+
+  .menuitemright h4 {
+    width: 50px;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 0px;
+    
+  }
+
+  .menuitemleft h4 {
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-top: 10px;
+    
+    
+  }
+
+  .menuitemleft h5 {
+    font-size: 1em;
+    font-weight: 400;
+    padding-top: 5px;
+  }
+
+  .tick {
+    width: 70px;
+    background-color: #90dec9;
+    height: 65px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    right: 0px;
+    }
+
+  .fa-circle-check {
+    color: white;
+    font-size: 1.8em;
+    font-weight: 400;
+    font-family: FontAwesome;
+
   }
