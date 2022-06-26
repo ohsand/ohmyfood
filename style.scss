@@ -10,6 +10,8 @@ $third-color: #99E2D0 !default;
 
 body {
     background-color: #ebebeb;
+    max-width: 1440px;
+    margin: auto;
 }
 
 div {
@@ -281,3 +283,27 @@ h1,h2,h3,h4,h5,h6 {
     padding-right: 15px;
     font-size: .8em;
   }
+
+    /*desktop*/
+    @media only screen
+    and (min-width: 992px) {
+  
+  
+  
+    }
+  
+    /*tablette*/
+    @media only screen
+    and (min-width: 768px)
+    and (max-width: 991px) {
+    
+    .fonctionnement {
+      flex-direction: row;
+    }
+
+    .fonctionnement h2 {
+      width: 100%;
+    }
+    
+    }
+      
