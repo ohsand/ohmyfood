@@ -5,13 +5,22 @@ body {
 }
 
 .fa-arrow-left {
-  position: absolute;
-  top: 28px;
+  position: relative;
+  top: 22px;
   left: 30px;
   font-size: 1.4em;
   color: black;
   height: 50px;
   width: 50px;
+}
+
+#header img {
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  right: 40px;
 }
 
 .mainimage img {
@@ -159,6 +168,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  border: 1px solid black;
+  width: 280px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  -webkit-transition: width .3s;
+  transition: width .3s;
 }
 
 .menuitemright {
@@ -167,30 +182,54 @@ body {
       -ms-flex-direction: row;
           flex-direction: row;
   height: 100%;
-  float: inline-end;
-  float: right;
   position: absolute;
   right: 0;
 }
 
 .menuitemright h4 {
-  width: 50px;
+  width: 40px;
   text-align: center;
   padding-top: 35px;
   padding-bottom: 0px;
-  padding-right: 20px;
+  padding-right: 0px;
+  border: 1px solid black;
+  display: block;
+}
+
+.price {
+  display: block;
+  position: relative;
+  left: 30px;
+  -webkit-transition: -webkit-transform 330ms ease-in-out;
+  transition: -webkit-transform 330ms ease-in-out;
+  transition: transform 330ms ease-in-out;
+  transition: transform 330ms ease-in-out, -webkit-transform 330ms ease-in-out;
 }
 
 .menuitemleft h4 {
   font-size: 1.1em;
   font-weight: 500;
   padding-top: 10px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
 }
 
 .menuitemleft h5 {
   font-size: 1em;
   font-weight: 400;
   padding-top: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
 }
 
 .tick {
@@ -206,15 +245,92 @@ body {
   position: relative;
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
-  right: 0px;
+  right: -70px;
 }
 
 .fa-circle-check {
   color: white;
   font-size: 1.3em;
   font-family: FontAwesome;
+  -webkit-animation: spin 1.2s linear 1;
+  animation: spin 1.2s linear 1;
+}
+
+.menumain h3 {
+  width: 50px;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #99E2D0;
+}
+
+/* menu animations */
+.menuitem {
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+}
+
+.menuitem:hover {
+  -webkit-box-shadow: 3px 3px 10px rgba(68, 68, 68, 0.8);
+          box-shadow: 3px 3px 10px rgba(68, 68, 68, 0.8);
+  cursor: pointer;
+}
+
+.menuitem:hover .tick {
+  -webkit-transform: translate(-70px, 0vh);
+          transform: translate(-70px, 0vh);
+}
+
+.menuitem:hover .price {
+  -webkit-transform: translate(-35px, 0vh);
+          transform: translate(-35px, 0vh);
+}
+
+.menuitem:hover .menuitemleft {
+  width: 63%;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.tick {
+  -webkit-transition: -webkit-transform 330ms ease-in-out;
+  transition: -webkit-transform 330ms ease-in-out;
+  transition: transform 330ms ease-in-out;
+  transition: transform 330ms ease-in-out, -webkit-transform 330ms ease-in-out;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
 }
 
 /*desktop*/
+@media only screen and (min-width: 992px) {
+  .menumain {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-bottom: 40px;
+  }
+  .plats h3, .desserts h3 {
+    margin-top: 0px;
+  }
+  .entree, .plats, .desserts {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+}
+
 /*tablette*/
 /*# sourceMappingURL=restaustyles.css.map */

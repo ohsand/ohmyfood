@@ -10,7 +10,7 @@ $third-color: #99E2D0 !default;
 
 body {
     background-color: #ebebeb;
-    max-width: 1440px;
+    /*max-width: 1440px;*/
     margin: auto;
 }
 
@@ -37,6 +37,8 @@ h1,h2,h3,h4,h5,h6 {
     transform: scale(.4);
     margin-left: auto;
     margin-right: auto;
+    position: relative;
+    right: 15px;
   }
 
 #location {
@@ -44,19 +46,19 @@ h1,h2,h3,h4,h5,h6 {
     color: #403f3f;
     justify-content: center;
     align-items: center;
-    margin-left: -35px;
+    margin-left: -10px;
     height: 50px;
 }
 
 #location .fa-location-dot {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 
 #location h3 {
     color: #403f3f;
     padding-left: 20px;
     padding-right: 20px;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 #explore {
@@ -161,7 +163,10 @@ h1,h2,h3,h4,h5,h6 {
 #restaurants {
     flex-direction: column;
     padding-top: 30px;
+    padding-bottom: 40px;
     align-items: center;
+    width: 100%;
+    overflow: hidden;
   }
   
 #restaurants h2 {
@@ -181,7 +186,6 @@ h1,h2,h3,h4,h5,h6 {
     border-radius: 15px;
     box-shadow: 3px 3px 10px rgba(68, 68, 68, 0.2);
     margin-bottom: 30px;
-    /*overflow: hidden;*/
   }
   
   
@@ -210,6 +214,8 @@ h1,h2,h3,h4,h5,h6 {
     padding-left: 10px;
   }
 
+  /*heart animation*/
+
   .form input[type="checkbox"]{
     display:none;  
   }
@@ -222,6 +228,8 @@ h1,h2,h3,h4,h5,h6 {
   }
   .form input[type="checkbox"]:checked +label.fa{
       background: #fff;
+      transform: scale(1.2);
+      transition: transform 330ms ease-in-out;
   }
   .form input[type="checkbox"] + label.fa:before {
        display:inline-block;
@@ -244,6 +252,8 @@ h1,h2,h3,h4,h5,h6 {
     left: 280px;
     bottom: 40px;
   }
+
+/* footer */
 
   footer {
     background-color: #403f3f;
@@ -282,7 +292,7 @@ h1,h2,h3,h4,h5,h6 {
     padding-left: 25px;
     padding-right: 15px;
     font-size: .8em;
-  }
+  } 
 
     /*desktop*/
     @media only screen
@@ -297,24 +307,16 @@ h1,h2,h3,h4,h5,h6 {
     and (min-width: 768px)
     and (max-width: 991px) {
 
-      #restaurants {
-        flex-direction: row;
-        overflow: auto;
-        width: 100%;
-        overflow: wrap;
-      }
-
-      #restaurants h2 {
-        width: 100%;
-        position: relative;
-        display: inline-block;
-        top: 0;
-        left: 0;
-      }
-
       .restaurantcard {
-        margin: 20px;
+        width: 500px;
       }
-    
+
+      .restaurantcard img {
+        width: 500px;
+      }
+      
+      .form {
+        left: 450px;
+      }
     }
       
