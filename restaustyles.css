@@ -168,7 +168,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 1px solid black;
   width: 280px;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -192,7 +191,6 @@ body {
   padding-top: 35px;
   padding-bottom: 0px;
   padding-right: 0px;
-  border: 1px solid black;
   display: block;
 }
 
@@ -246,20 +244,59 @@ body {
   border-bottom-right-radius: 15px;
   border-top-right-radius: 15px;
   right: -70px;
+  -webkit-transition: -webkit-transform 330ms ease-in-out;
+  transition: -webkit-transform 330ms ease-in-out;
+  transition: transform 330ms ease-in-out;
+  transition: transform 330ms ease-in-out, -webkit-transform 330ms ease-in-out;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
 }
 
 .fa-circle-check {
   color: white;
   font-size: 1.3em;
   font-family: FontAwesome;
-  -webkit-animation: spin 1.2s linear 1;
-  animation: spin 1.2s linear 1;
+  -webkit-transition: -webkit-transform .4s linear;
+  transition: -webkit-transform .4s linear;
+  transition: transform .4s linear;
+  transition: transform .4s linear, -webkit-transform .4s linear;
 }
 
 .menumain h3 {
   width: 50px;
   padding-bottom: 5px;
   border-bottom: 3px solid #99E2D0;
+}
+
+.orderbtn {
+  color: white;
+  background: #ff79da;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff79da), color-stop(95%, #9356dc), to(#9356dc));
+  background: linear-gradient(180deg, #ff79da 0%, #9356dc 95%, #9356dc 100%);
+  font-size: 1.1em;
+  padding: 15px;
+  border-radius: 50px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-weight: 400;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  padding-left: 50px;
+  padding-right: 50px;
+  -webkit-box-shadow: 2px 6px 15px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 2px 6px 15px 0px rgba(0, 0, 0, 0.4);
+  border: none;
+}
+
+.orderbtn:hover {
+  -webkit-box-shadow: 3px 3px 10px rgba(68, 68, 68, 0.8);
+          box-shadow: 3px 3px 10px rgba(68, 68, 68, 0.8);
+  cursor: pointer;
 }
 
 /* menu animations */
@@ -290,28 +327,9 @@ body {
   width: 63%;
 }
 
-@-webkit-keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-  }
-}
-
-@keyframes spin {
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-.tick {
-  -webkit-transition: -webkit-transform 330ms ease-in-out;
-  transition: -webkit-transform 330ms ease-in-out;
-  transition: transform 330ms ease-in-out;
-  transition: transform 330ms ease-in-out, -webkit-transform 330ms ease-in-out;
-  -webkit-transition-property: -webkit-transform;
-  transition-property: -webkit-transform;
-  transition-property: transform;
-  transition-property: transform, -webkit-transform;
+.menuitem:hover .fa-circle-check {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 /*desktop*/
@@ -321,7 +339,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
   }
   .plats h3, .desserts h3 {
     margin-top: 0px;
