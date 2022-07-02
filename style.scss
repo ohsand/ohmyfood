@@ -160,6 +160,10 @@ h1,h2,h3,h4,h5,h6 {
     padding-left: 10px;
 }
 
+.fa-store {
+  color: #9356DC !important;
+}
+
 .step h3 {
     padding-left: 15px
 }
@@ -202,8 +206,29 @@ h1,h2,h3,h4,h5,h6 {
     object-fit: cover;
     margin-left: -5px;
     margin-top: -5px;
+    position: relative;
   }
   
+.new {
+  background-color: #99E2D0;
+  color: green;
+  font-size: .9em;
+  font-weight: 500;
+  position: relative;
+  font-family: 'Roboto', sans-serif; 
+  width: fit-content;
+  left: 235px;
+  top: -165px;
+  padding: 5px 15px;
+  margin-bottom: -28px;
+  border-radius: 5px;
+  box-shadow: 5px 10px -1px rgba(0,0,0,0.69);
+}
+
+.newtwo {
+  top: -205px !important;
+}
+
 .restaurantcard h3 {
     font-size: 1.2em;
     font-weight: 600;
@@ -294,7 +319,7 @@ h1,h2,h3,h4,h5,h6 {
   z-index: 1000;
 }
 
-.container h1 {
+.container h2 {
   font-size: 1em;
   text-align: center;
   position: absolute;
@@ -344,10 +369,10 @@ h1,h2,h3,h4,h5,h6 {
 
 @keyframes disappear {
    from {
-    opacity:1 ;
+    z-index:999 ;
   }
   to {
-    opacity:0 ;
+    z-index:-100 ;
   }
 }
 
@@ -440,6 +465,10 @@ h1,h2,h3,h4,h5,h6 {
       .form {
         left: 450px;
       }
+
+      .new, .newtwo {
+        left: 400px;
+      }
   
     }
   
@@ -458,6 +487,10 @@ h1,h2,h3,h4,h5,h6 {
       
       .form {
         left: 450px;
+      }
+
+      .new, .newtwo {
+        left: 400px;
       }
     }
       
