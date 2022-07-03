@@ -305,6 +305,16 @@ body {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
+  -webkit-animation: 1s ease-out 0s 1 slideup;
+          animation: 1s ease-out 0s 1 slideup;
+  -webkit-transition: -webkit-transform 1330ms ease-in-out;
+  transition: -webkit-transform 1330ms ease-in-out;
+  transition: transform 1330ms ease-in-out;
+  transition: transform 1330ms ease-in-out, -webkit-transform 1330ms ease-in-out;
+  -webkit-animation-name: slideup;
+          animation-name: slideup;
+  -webkit-animation: slideup 2000ms 0ms;
+          animation: slideup 2000ms 0ms;
 }
 
 .menuitem:hover {
@@ -330,6 +340,32 @@ body {
 .menuitem:hover .fa-circle-check {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+}
+
+@-webkit-keyframes slideup {
+  0% {
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideup {
+  0% {
+    -webkit-transform: translateY(25px);
+            transform: translateY(25px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 /*desktop*/

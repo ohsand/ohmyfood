@@ -245,6 +245,10 @@ body {
 
   .menuitem {
     transition-property: transform;
+    animation: 1s ease-out 0s 1 slideup;
+    transition: transform 1330ms ease-in-out;
+    animation-name: slideup;
+    animation: slideup 2000ms 0ms;
     &:hover {
     box-shadow: 3px 3px 10px rgba(68, 68, 68, 0.8);
     cursor: pointer;
@@ -262,7 +266,17 @@ body {
       transform: rotate(360deg);
     }
 
+  }
 
+  @keyframes slideup {
+    0% {
+      transform: translateY(25px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0px);
+      opacity: 1;
+    }
   }
 
   /*desktop*/
