@@ -10,7 +10,7 @@ $third-color: #99E2D0 !default;
 
 body {
     background-color: #ebebeb;
-    max-width: 1440px;
+    max-width: 1440px !important;
     margin: auto;
 }
 
@@ -140,6 +140,10 @@ h1,h2,h3,h4,h5,h6 {
     background-color: #f7f7f7;
 }
 
+.laststep {
+  background-color: #F5EAF6;
+}
+
 .step h4 {
     color: white;
     background-color: #9356DC;
@@ -159,6 +163,7 @@ h1,h2,h3,h4,h5,h6 {
     font-size: 1.3em;
     padding-left: 10px;
 }
+
 
 .fa-store {
   color: #9356DC !important;
