@@ -201,6 +201,9 @@ h1,h2,h3,h4,h5,h6 {
     margin-bottom: 30px;
   }
   
+  .restaurantcard:hover {
+    background-color: #F5EAF6;
+  }
   
 .restaurantcard img {
     border-top-left-radius: 15px;
@@ -261,7 +264,7 @@ h1,h2,h3,h4,h5,h6 {
       cursor: pointer;
   }
   .form input[type="checkbox"]:checked +label.fa{
-      background: #fff;
+      background: transparent;
       transform: scale(1.2);
       transition: transform 330ms ease-in-out;
   }
@@ -271,6 +274,7 @@ h1,h2,h3,h4,h5,h6 {
        font-weight: 400;
        color: #6d6c6c;
        cursor:pointer;
+       background: transparent;
   }
   
   .form input[type="checkbox"]:checked +label.fa:before{
@@ -373,12 +377,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 @keyframes disappear {
-   from {
-    z-index:999 ;
-  }
-  to {
-    z-index:-100 ;
-  }
+  from {
+   opacity: 1;
+   z-index:999 ;
+ }
+ to {
+   opacity: 0;
+   z-index:-100 ;
+ }
 }
 
 /* footer */
@@ -421,6 +427,10 @@ h1,h2,h3,h4,h5,h6 {
     padding-right: 15px;
     font-size: .8em;
   } 
+
+  footer a:hover {
+    color:#F5EAF6;
+  }
 
     /*desktop*/
     @media only screen
