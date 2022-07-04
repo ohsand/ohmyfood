@@ -23,8 +23,9 @@ body {
 }
 
 .mainimage img {
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
     position: relative;
 }
 
@@ -294,6 +295,15 @@ body {
     .entree, .plats, .desserts {
       margin-left: 50px;
       margin-right: 50px;
+    }
+
+    .entreenote {
+      margin-top: 80px;
+    }
+
+    .menumain {
+      margin: 0 auto;
+      flex-wrap: wrap;
     }
 
   }
