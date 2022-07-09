@@ -111,7 +111,6 @@ h1,h2,h3,h4,h5,h6 {
       box-shadow: 3px 3px 10px rgba(68, 68, 68, 0.8);
       background: rgb(253, 162, 227);
       background: linear-gradient(180deg, rgba(253, 162, 227) 0%, rgb(158, 111, 216) 95%, rgb(163, 120, 216) 100%);
-      
       cursor: pointer;
     }
 }
@@ -440,6 +439,12 @@ h1,h2,h3,h4,h5,h6 {
     @media only screen
     and (min-width: 992px) {
       
+      body {
+        background-color: #ebebeb;
+        max-width: 1440px !important;
+        margin: auto;
+    }
+
       #fonctionnement {
         flex-direction: row;
         justify-content: center;
