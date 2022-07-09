@@ -160,6 +160,7 @@ body {
           flex-direction: row;
   overflow: hidden;
   position: relative;
+  opacity: 0;
 }
 
 .menuitemleft {
@@ -315,8 +316,8 @@ body {
   transition: transform 1330ms ease-in-out, -webkit-transform 1330ms ease-in-out;
   -webkit-animation-name: slideup;
           animation-name: slideup;
-  -webkit-animation: slideup 2000ms 0ms;
-          animation: slideup 2000ms 0ms;
+  -webkit-animation: slideup 2000ms linear 0s 1 normal forwards;
+          animation: slideup 2000ms linear 0s 1 normal forwards;
 }
 
 .menuitem:hover {
@@ -342,6 +343,33 @@ body {
 .menuitem:hover .fa-circle-check {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+}
+
+.menuitem2 {
+  -webkit-transition: -webkit-transform 1330ms 200ms ease-in-out !important;
+  transition: -webkit-transform 1330ms 200ms ease-in-out !important;
+  transition: transform 1330ms 200ms ease-in-out !important;
+  transition: transform 1330ms 200ms ease-in-out, -webkit-transform 1330ms 200ms ease-in-out !important;
+  -webkit-animation: slideup 2000ms linear 200ms 1 normal forwards !important;
+          animation: slideup 2000ms linear 200ms 1 normal forwards !important;
+}
+
+.menuitem3 {
+  -webkit-transition: -webkit-transform 1330ms 400ms ease-in-out !important;
+  transition: -webkit-transform 1330ms 400ms ease-in-out !important;
+  transition: transform 1330ms 400ms ease-in-out !important;
+  transition: transform 1330ms 400ms ease-in-out, -webkit-transform 1330ms 400ms ease-in-out !important;
+  -webkit-animation: slideup 2000ms linear 400ms 1 normal forwards !important;
+          animation: slideup 2000ms linear 400ms 1 normal forwards !important;
+}
+
+.menuitem4 {
+  -webkit-transition: -webkit-transform 1330ms 600ms ease-in-out !important;
+  transition: -webkit-transform 1330ms 600ms ease-in-out !important;
+  transition: transform 1330ms 600ms ease-in-out !important;
+  transition: transform 1330ms 600ms ease-in-out, -webkit-transform 1330ms 600ms ease-in-out !important;
+  -webkit-animation: slideup 2000ms linear 600ms 1 normal forwards !important;
+          animation: slideup 2000ms linear 600ms 1 normal forwards !important;
 }
 
 @-webkit-keyframes slideup {
