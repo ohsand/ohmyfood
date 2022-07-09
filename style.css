@@ -128,6 +128,8 @@ h1, h2, h3, h4, h5, h6 {
 #explore h4:hover {
   -webkit-box-shadow: 3px 3px 10px rgba(68, 68, 68, 0.8);
           box-shadow: 3px 3px 10px rgba(68, 68, 68, 0.8);
+  background: rgb(253, 162, 227);
+  background: linear-gradient(180deg, rgba(253, 162, 227) 0%, rgb(158, 111, 216) 95%, rgb(163, 120, 216) 100%);
   cursor: pointer;
 }
 
@@ -555,6 +557,13 @@ footer a:hover {
 
 /*desktop*/
 @media only screen and (min-width: 992px) {
+
+  body {
+    background-color: #ebebeb;
+    max-width: 1140px !important;
+    margin: auto;
+}
+
   #fonctionnement {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
