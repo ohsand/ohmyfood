@@ -238,9 +238,12 @@ body {
     box-shadow: 2px 6px 15px 0px rgba(0,0,0,0.4);
     border: none;
     &:hover {
-      box-shadow: 3px 3px 10px rgba(68, 68, 68, 0.8);
-      cursor: pointer;
+        box-shadow: 3px 3px 10px rgba(68, 68, 68, 0.8);
+        background: rgb(253, 162, 227);
+        background: linear-gradient(180deg, rgba(253, 162, 227) 0%, rgb(158, 111, 216) 95%, rgb(163, 120, 216) 100%);
+        cursor: pointer;
     }
+
 }
 
   /* menu animations */
